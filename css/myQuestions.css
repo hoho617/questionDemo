@@ -1,0 +1,119 @@
+.wrapper_AQ {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:44px;
+}
+/** 我的提问开始*/
+.AQ_list {
+	padding:0 12px;
+	background: #fff;
+}
+.AQ_list li {
+	padding:14px 0;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+.AQ_list li:last-child{
+	border:none;
+}
+.AQ_list li a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin:-14px 0;
+	padding:inherit;
+	color: inherit;
+}
+.AQ_list li .question_title {
+	margin:0 0 9px 0;
+	color:#333;
+}
+.AQ_btn {
+	position: absolute;
+	bottom:0;
+	width:100%;
+	height:44px;
+	line-height: 44px;
+	color:#fff;
+	text-align: center;
+	background: #E51C23;
+	color:#fff;
+	font-size: 15px;
+}
+
+/** 我的提问结束*/
+
+/** 我的回答开始*/
+.AQ_list .question_detail{
+	color:#666666;
+}
+.operator_time {
+	font-size: 12px;
+	color:#999999;
+}
+/** 我的回答结束*/
+
+
+/** 浏览历史开始*/
+.browser_list {
+	background: #fff;
+}
+.browser_list li.browser_item {
+	position: relative;
+	padding-left:38px;
+}
+.browser_list li.browser_item a {
+	position: relative;
+	display: block;
+	margin-left:-38px;
+	overflow: hidden;
+	padding:inherit;
+	color: inherit;
+}
+.browser_list li.browser_item .flag_icon {
+	position: absolute;
+	width:38px;
+	text-align: center;
+	left:0;
+	top:9px;
+}
+.browser_list li.browser_item .browser_cont{
+	border-bottom: 1px solid #eee;
+	padding:10px 0;
+}
+.browser_tit h3 {
+	font-size: 14px;
+	color:#000000;
+	width:98%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.answer_flag h3 {
+    min-width:30%;
+    max-width: 70% ;
+}
+.browser_cont .operator_btn {
+	margin-top: 4px;
+}
+
+
+.icon-huida- {
+	font-size: 22px;
+	color:#4b89df;
+}
+.icon-tiwen- {
+	font-size: 22px;
+	color:#4b89df;
+}
+.icon-shipin {
+	font-size: 18px;
+	color:#E51C23;
+}
+.icon-shouye-yinpin {
+	font-size: 18px;
+	color:#E51C23;
+}
+/** 浏览历史结束*/

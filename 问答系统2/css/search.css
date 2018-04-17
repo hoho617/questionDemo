@@ -1,0 +1,43 @@
+.search_history {
+	padding:13px 10px;
+}
+.search_history .history_tit {
+	color:#999999;
+	font-size: 12px;
+	line-height: 24px;
+	margin-bottom:4px;
+}
+.history_head span {
+	display: block;
+	width:40px;
+	height:24px;
+	background: url(../images/empty_icon.png) no-repeat center right;
+	background-size: 11px 12px;
+}
+
+.history_list {
+	
+}
+.history_list li {
+	padding:6px 0;
+	position: relative;
+}
+.history_list li a {
+	position: relative;
+	padding: inherit;
+	overflow: hidden;
+	display: block;
+	color:#333;
+	font-size: 14px;
+	margin:-6px 0;
+	
+}
+.history_list li .del_icon {
+	width:40px;
+	height:20px;
+	display: inline-block;
+	background: url(../images/remove_icon.png) no-repeat center right;
+	background-size: 9px;
+}
+
+

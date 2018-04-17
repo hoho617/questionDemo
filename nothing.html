@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<title>没有相关记录</title>
+	<style>
+		.nothing_area {
+			position:absolute;
+			top:140px;
+			left:50%;
+			transform: translateX(-50%);
+			width:100%;
+		}
+		.nothing_area .nothing_image{
+			width:100%;
+			height:105px;
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+		.nothing_area .nothing_txt {
+			text-align: center;
+			font-size: 14px;
+			color:#bcbcbc;
+			margin-top:40px;
+		}
+		.no_buy .nothing_image {
+			background-image: url(images/nothing_icon1.png);
+			background-size: 130px;
+		}
+		.no_history .nothing_image {
+			background-image: url(images/nothing_icon2.png);
+			background-size: 121px;
+		}
+		.no_collect .nothing_image {
+			background-image: url(images/nothing_icon3.png);
+			background-size: 136px;
+		}
+		.no_sharedcode .nothing_image {
+			background-image: url(images/nothing_icon4.png);
+			background-size: 122px;
+		}
+		.no_sharedcode .nothing_image {
+			background-image: url(images/nothing_icon5.png);
+			background-size: 117px;
+		}
+	</style>
+</head>
+<body class="grey_bg">
+	 <div class="nothing_area no_buy dn">
+	 	<p class="nothing_image"></p>
+	 	<p class="nothing_txt">您还没有购买记录~</p>
+	 </div>
+	 <div class="nothing_area no_history dn">
+	 	<p class="nothing_image"></p>
+	 	<p class="nothing_txt">没有历史记录哦~</p>
+	 </div>
+	 <div class="nothing_area no_collect dn">
+	 	<p class="nothing_image"></p>
+	 	<p class="nothing_txt">没有收藏记录哦~</p>
+	 </div>
+	 <div class="nothing_area no_sharedcode dn">
+	 	<p class="nothing_image"></p>
+	 	<p class="nothing_txt">没有未使用的分享码~</p>
+	 </div>
+	 <div class="nothing_area no_sharedcode">
+	 	<p class="nothing_image"></p>
+	 	<p class="nothing_txt">未搜索到相关内容~</p>
+	 </div>
+</body>
+</html>

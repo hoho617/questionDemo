@@ -1,0 +1,197 @@
+.wraper_head {
+	height: 17.714rem;
+	position: relative;
+	top:0;
+	left:0;
+	right:0;
+	background: url(../../images/v3/home_banner.jpg) no-repeat center top;
+	background-size: 100% 10.714rem;
+	background-color: #fff;
+	border-bottom:1px solid #eee;
+}
+.wraper_head .exit_login {
+	position: absolute;
+	top:0;
+	right:1.071rem;
+	height: 2.857rem;
+	line-height: 2.857rem;
+	
+}
+.content {
+	padding-bottom:3.571rem;
+}
+.wraper_head .exit_login a {
+	background: url(../../images/v3/home_icon10.png) no-repeat right .214rem;
+	background-size: .5rem .857rem;
+	padding-right:.928rem;
+	font-size: 1rem;
+	color:#FFFFFF;
+}
+.position_box {
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform: translateX(-50%);
+	width:100%;
+}
+.wraper_head .profile_box {
+	width:6rem;
+	height: 6rem;
+	margin:0 auto;
+	border:2px solid #fff;
+	border-radius:50%;
+	overflow: hidden;
+}
+.wraper_head .profile_box img {
+	width:100%;
+}
+.wraper_head .position_box p {
+	font-size: 1.28rem;
+	color:#000000;
+	text-align: center;
+	line-height: 4.428rem;
+}
+.wraper_head .login_out {
+	border:none;
+}
+.record_links {
+	line-height: 2.5rem;
+	font-size: 1rem;
+	padding:.357rem 0;
+	color:#333333;
+	text-align: center;
+	background:#fff;
+}
+.record_links i {
+	vertical-align: sub;
+}
+.record_links .history {
+	border-right:1px solid #EEEEEE;
+	height: 2.5rem;
+}
+.record_links .icon-wode-lishi {
+	font-size: 1.57rem;
+	color:#9FA0A0;
+	margin-right:.714rem;
+}
+.record_links .icon-wode-shoucang {
+	font-size: 1.71rem;
+	color:#9FA0A0;
+	margin-right:.571rem;
+}
+.item_list li {
+	border-bottom: 1px solid #EEEEEE;
+}
+.item_list li a {
+	display: block;
+}
+.item_list .item_left {
+	line-height: 1.857rem;
+	font-size: 1rem;
+	height: 1.857rem;
+	color:#333333;
+	display: inline-block;
+}
+.item_list .item_left .iconfont {
+	font-size: 2.14rem;
+	vertical-align: middle;
+	margin-right:.714rem;
+}
+.item_list .item_right {
+	text-align: right;
+	height: 1.857rem;
+	line-height: 1.857rem;
+}
+.item_list .item_right i {
+	font-size: 1.14rem;
+	color:#BCBCBC;
+}
+.item_list .icon-wode-goumaijilu{
+	color: #3495FE;
+}
+.item_list .icon-wode-fenxiangma{
+	color: #15BC84;
+}
+.item_list .icon-wode-wanshanxinxi{
+	color: #FF943C;
+}
+.item_list .icon-wode-wodekefu{
+	color: #ED593B;
+}
+.item_list .icon-wode-wodetianehui{
+	color: #2E98FE;
+}
+.item_list .icon-wode-guanzhugongzhonghao{
+	color: #17BC84;
+}
+
+
+.login_list li {
+	height: 2.929rem;
+	line-height: 2.929rem;
+	border-bottom:1px solid #EEEEEE;
+}
+.label_icon {
+	height: 2.929rem;
+	padding:0 .714rem;
+}
+.label_icon i{
+	font-size: 1.57rem;
+	color:#E51C23;
+}
+.user_code .label_icon {
+	
+}
+.user_code .get_code {
+	font-size: 0.92rem;
+	color:#E51C23;
+	text-align: right;
+}
+.login_list li input {
+	height: 2.857rem;
+	line-height: 2.857rem;
+	padding-left:0;
+}
+/*placeholder文本颜色*/
+.login_list input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+color:#999999;
+}
+.login_list input:-moz-placeholder,textarea:-moz-placeholder{
+color:#999999;
+}
+.login_list .login_in {
+	height: 2.428rem;
+	border:none;
+	background: #E51C23;
+	line-height: 2.428rem;
+	color:#FFFFFF;
+	text-align: center;
+	border-radius: 5px;
+	margin-top:2.857rem;
+}
+/*二维码框*/
+.code_box .modal-content{
+	padding-top:0;
+}
+.code_tit {
+	width:100%;
+	height: 4.142rem;
+	line-height: 4.142rem;
+	background: #E51C23;
+	font-size: 1rem;
+	color:#fff;
+	border-radius: .571rem .571rem 0 0;
+	text-align: center;
+}
+.code_box .modal-body {
+	text-align: center;
+}
+.code_box .modal-body img{
+	width:13.857rem;
+	margin:0 auto;
+}
+.code_box .modal-body p {
+	font-size: 0.92rem;
+	color:#666666;
+	line-height: 1.714rem;
+}

@@ -1,0 +1,59 @@
+.put_box {
+	width:100%;
+	padding:0 10px;
+}
+.put_area {
+	position: relative;
+}
+.put_area:after {
+	content:"";
+	display: block;
+	width:100%;
+	height:1px;
+	background: #eee;
+	position: absolute;
+	bottom:0;
+}
+.put_box textarea {
+	background: #fff;
+	display: block;
+	width:100%;
+	overflow-y: visible;
+	padding-top:15px;
+}
+.put_box .put_area textarea{
+	font-size: 16px;
+}
+.question_desc textarea {
+	padding:12px 0;
+	font-size: 14px;
+	color:#333333;
+}
+.put_area textarea::-webkit-input-placeholder{
+color:#999999;
+font-size: 1rem;
+}
+.put_area textarea:-moz-placeholder{
+color:#999999;
+font-size: 1rem;
+}
+
+a.next_step {
+	display: block;
+	color:#fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	height:44px;
+	position: fixed;
+	bottom:10px;
+	width:90%;
+	z-index: 100000;
+	background: #E51C23;
+	left:50%;
+	transform: translateX(-50%);
+	border-radius: 8px;
+}
+.pdb {
+	padding-bottom: 10px;
+}

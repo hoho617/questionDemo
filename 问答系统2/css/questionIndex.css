@@ -1,0 +1,71 @@
+/*tab栏*/
+.question_tab {
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+.question_tab li a {
+	color:#333;
+	/*height:3.142rem;
+	line-height: 3.142rem;*/
+	height:2.56rem;
+	font-size: 1.142rem;
+	display: inline-block;
+	text-align: center;
+	width:68px;
+	position: relative;
+}
+.question_tab li.active a {
+	color:#E51C23;
+}
+.question_tab li.active a:after {
+    display: block;
+    content: "";
+    width: 68px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: #E51C23;
+}
+
+.wrapper_content {
+	position: absolute;
+	top:95px;
+	bottom:49px;
+	overflow: auto;
+	width:100%;
+	
+}
+.questions_list {
+	padding:0 10px;
+	background: #fff;
+}
+
+
+.serial_number {
+	float: left;
+	width:9%;
+}
+.serial_number span {
+	display: block;
+	width:19px;
+	height:19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 14px;
+	color:#fff;
+	background: #c0c0c0;
+	border-radius: 4px;
+}
+.question_item:first-child .serial_number span {
+	background: #E51C23;
+}
+.question_item:nth-child(2) .serial_number span {
+	background: #E51C23;
+}
+.question_item:nth-child(3) .serial_number span {
+	background: #E51C23;
+}
+.main_info {
+	width:91%;
+}

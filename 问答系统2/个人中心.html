@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/userCenter.css"/>
+    
+    <style>
+    	.links_wrapper {
+    		font-size: 13px;
+    		color:#666;
+    		background: #fff;
+    		height:70px;
+    	}
+    	.links_wrapper .links_item {
+    		width:25%;
+    		text-align: center;
+    	}
+    	.links_wrapper .links_item a {
+    		display: block;
+    		padding:12px 0 11px;
+    	}
+    	.links_wrapper .links_item .links_icon {
+    		display: block;
+    		height:19px;
+    		background-repeat: no-repeat;
+    		background-size: 19px;
+    		background-position: center center;
+    		margin-bottom: 10px;
+    	}
+    	.links_wrapper .links_item .coll_icon {
+    		background-image: url(images/center_icon1.png);
+    	}
+    	.links_wrapper .links_item .history_icon {
+    		background-image: url(images/center_icon2.png);
+    	}
+    	.links_wrapper .links_item .ask_icon {
+    		background-image: url(images/center_icon3.png);
+    	}
+    	.links_wrapper .links_item .ques_icon {
+    		background-image: url(images/center_icon4.png);
+    	}
+    	.message_badge {
+    		position: relative;
+    	}
+    	.message_badge:before {
+    		display: block;
+    		width:6px;
+    		height:6px;
+    		border-radius: 50%;
+    		background: #E51C23;
+    		position: absolute;
+    		top:-2px;
+    		content:"";
+    		left:60%;
+    	}
+    	.item_list .icon-daoshigongzuotai-{
+			color: #ed593b;
+		}
+    	
+    	
+    </style>
+</head>
+<body class="grey_bg">
+	<header class="wraper_head">
+		<div class="exit_login">
+			
+         		
+         		<a data-toggle="modal" data-target="#loginModal">登录</a>
+         	
+		</div>
+		
+		
+     		
+     		
+     			<div class="login_box">
+					<div class="position_box" data-toggle="modal" data-target="#loginModal">
+						<div class="profile_box login_out">
+							<a class="to_login">
+								<img src="/jsp/images/v3/no_login.png"/>
+							</a>
+						</div>
+						<p>点击登录</p>
+					</div>
+				</div>
+     		
+     	
+	</header>
+	<div class="content">
+		<section class="links_wrapper clear">
+			<div class="fl links_item">
+				<a href="javascript:;">
+					<i class="links_icon coll_icon"></i>
+					<p>收藏</p>
+				</a>
+			</div>
+			<div class="fl links_item">
+				<a href="javascript:;">
+					<i class="links_icon history_icon"></i>
+					<p>历史</p>
+				</a>
+			</div>
+			<div class="fl links_item">
+				<a href="javascript:;">
+					<i class="links_icon ask_icon"></i>
+					<p>提问</p>
+				</a>
+			</div>
+			<div class="fl links_item">
+				<a href="javascript:;">
+					<i class="links_icon ques_icon message_badge"></i>
+					<p>回答</p>
+				</a>
+			</div>
+		</section>
+		<section class="item_box mt10">
+			<ul class="item_list">
+				<li class="menu_media">
+					<a href="javascript:;">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-daoshigongzuotai-"></i>导师工作台
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a href="/swan/center!goBuyrecode.do">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-goumaijilu"></i>购买记录
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a href="javascript:void(0)" onclick="checkMember(2)">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-fenxiangma"></i>分享码
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a href="javascript:void(0)" onclick="checkMember(1)">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-wanshanxinxi"></i>完善信息
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a href="/jsp/v3/service.jsp">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-wodekefu"></i>我的客服
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a href="/jsp/v3/about-swan.jsp">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-wodetianehui"></i>关于天鹅会
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+				<li class="menu_media">
+					<a onclick="showWxQRcode()">
+						<div class="item_left menu_left flex">
+							<i class="iconfont icon-wode-guanzhugongzhonghao"></i>关注公众号
+						</div>
+						<div class="menu_right item_right">
+							<i class="iconfont icon-you"></i>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<footer class="nav_bar">
+		<ul>
+			<li>
+				<a href="/swan/home!initHome.do">
+					<i class="iconfont icon-shouye-kecheng"></i>
+					<p>专栏</p>
+				</a>
+			</li>
+			<li>
+				<a href="/swan/resident!goResidentList.do">
+					<i class="iconfont icon-shouye-daoshi"></i>
+					<p>导师</p>
+				</a>
+			</li>
+			<li class="active">
+				<a href="/swan/member!memberCenter.do">
+					<i class="iconfont icon-shouye-wode"></i>
+					<p>我的</p>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<!--登录框-->
+	<div class="modal fade my_modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="position:absolute">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		      		<h4>仅差一步即可进入</h4>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeLoginModal()"><span aria-hidden="true" class="close_icon"></span></button>
+		      	</div>
+			    <div class="modal-body">
+					<ul class="login_list">
+						<li class="user_phone">
+							<label class="col-2 label_icon"><i class="iconfont icon-denglu-shoujihaoma"></i></label>
+							<input type="text" placeholder="请输入手机号（用于登录及接收资料）" class="col-8" id="telephone" maxlength="11"/>
+						</li>
+						<li class="user_code">
+							<label class="col-2 label_icon"><i class="iconfont icon-denglu-yanzhengma"></i></label>
+							<input type="text" placeholder="请输入验证码" class="col-5" id="checkCode" maxlength="12"/>
+							<button class="col-3 get_code send_code" id="validCode" onclick="sendCheckCode('')">获取验证码</button>
+						</li>
+						<div class="login_error" id="error" >
+							<label class="col-xs-2 label_icon"></label>
+							<span style="color:red;">手机号码不能为空</span>
+						</div>
+						<li class="login_in" onclick="login('', '/swan/member!memberCenter.do')">
+							登录
+						</li>
+					</ul>
+			    </div>
+		    </div>
+	  	</div>
+	</div>
+	
+	
+</body>
+<script type="text/javascript">
+	useCode = 'PL,MKOijn098';
+	function showModal(){
+		$("#myModal").modal("show");
+	}
+	
+	function hideModal(){
+		$("#myModal").modal("hide");
+	}
+
+	//  -------------------------------- 退出登录   -------------------------------------
+	function outlogin(){
+		$.ajax({
+	        url : "/swan/authorLogin!outlogin.do",
+	        dataType : 'json',
+	        type : 'post',
+	        success : function(data){
+	        	if(data.resFlag=='1'){
+	        		location.href="/swan/member!memberCenter.do";
+	        	}else{
+	        		alertInfo("fail", data.resMsg);
+	        	}
+	        },
+			error: function(e) { 
+				console.log("log - 退出登录异常", e)
+				alertInfo("fail", "网络异常请稍候再试!");
+			} 
+		});	
+	}
+	// 完善地址 和分享码 跳转之前判断当前用户类型
+	function checkMember(n) {
+		var member = '';
+		var type = '';
+		if (member && type && type != '0') {
+			if (n==1){
+				location.href = "/swan/member!memberDetail.do";
+			} else {
+				location.href= "/swan/member!goShareCode.do";
+			}
+		} else {
+			$("#loginModal").modal("show");
+		}
+	}
+</script>
+<div style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1272376125'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1272376125%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+
+</html>
